@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.nav{
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav-options{
+    display: flex;
+   align-items: center;
+    gap: 4vw;
+}
+
+.nav h1{
+    font-size: 3vw;
+    font-weight: 900;
+}
+.nav-options h3{
+    font-size: 1.2vw;
+    font-weight: 700;
+    transition: 0.3s;
+
+}
+
+.nav-options h3:hover{
+transform: scale(1.2);
+}
+
+.nav i{
+    font-size: 1.6vw;
+    font-weight: 900;
+    display: none;
+}
+.nav button{
+    font-size: 1.2vw;
+
+    padding:  1vw 2.5vw;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav button:hover{
+    transform: scale(1.1);
+    }
+    
+
+.content{
+    height:600px;
+    width:100%;
+   
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 600px;
+    width: 65%;
+    
+    padding: 6vw 4vw;
+    line-height: ;
+
+}
+.left h1{
+    font-size: 4.2vw;
+
+}
+.left p{
+    font-size: 1.3vw;
+    /* line-height: 2vw; */
+    color: #666;
+    font-weight: 600;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.left span{
+    color: lightseagreen;
+}
+.content button{
+   padding:  0.9vw;
+   border: none;
+   background-color: lightseagreen;
+   color: white;
+   border-radius: 5px;
+   font-weight: 700;
+}
+.right{
+    height: 600px;
+    width: 45%;
+    
+
+}
+.right img{
+    margin-top: 4vw;
+    height: 105%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+
+    .nav{
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h1{
+        font-size: 6vw;
+    }
+    .nav h3{
+        display: none;
+    }
+    .nav i{
+        display:block;
+        font-size: 6vw; 
+    }
+    .nav button{
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height:500px;
+    }
+    .left{
+        height: 70%;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 10vw;
+        width: 100%;
+        
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 7vw;
+    }
+
+
+    .right{
+        height: 50%;
+        width: 100%;
+    }
+    .right img{
+        margin-top: 10vw;
+        height: 150%;
+        width: 90%;
+        margin-left: 5vw;
+    }
+    
+    .content button{
+        padding: 3vw 3vw;
+        font-size: 3vw;
+        border-radius: 4px;
+        font-weight: 600px;
+    }
+
+}
